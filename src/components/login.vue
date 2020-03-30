@@ -83,7 +83,7 @@ export default {
           this.$message.success(res.meta.msg)
           // 将服务器传入的token值存入浏览器的sessionStorage
           window.sessionStorage.setItem('token', res.data.token)
-          // 修改路径
+          // 修改路由路径
           this.$router.push('/Home')
         })
       })
