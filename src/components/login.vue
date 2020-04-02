@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     reset () {
-      // this指向form实例对象
+      // this指向当前组件的实例对象
       // console.log(this.$refs)
       // 直接获取loginFormRef对象时，dom元素还未加载，报错
       // this.$refs.loginFormRef.resetFields()
