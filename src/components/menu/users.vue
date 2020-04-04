@@ -345,18 +345,26 @@ export default {
     },
 
     // 删除操作
-    async DeleteUsers(id) {
-      const { data: res } = await this.$http.delete('users/' + id)
-      if (res.meta.status !== 200) return this.$message.success(res.meta.msg)
-      this.$message.error(res.meta.msg)
-      this.getlist()
+    DeleteUsers(id) {
+      this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(async () => {
+        const { data: res } = await this.$http.delete('users/' + id)
+        if (res.meta.status !== 200) return this.$message.success(res.meta.msg)
+        this.$message.error(res.meta.msg)
+        this.getlist()
+      })
+        .catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          })
+        })
     }
-    // PowerChange(id) {
-    //   console.log(id)
-    // }
   }
 }
-
 </script>
 
 <style lang="less" scoped>
