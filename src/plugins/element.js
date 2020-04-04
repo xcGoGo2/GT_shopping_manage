@@ -19,7 +19,11 @@ import {
   Row,
   Col,
   Table,
-  TableColumn
+  TableColumn,
+  Switch,
+  Tooltip,
+  Pagination,
+  Dialog
 } from 'element-ui'
 // 导入消息提示框
 Vue.use(Button)
@@ -41,5 +45,9 @@ Vue.use(Row)
 Vue.use(Col)
 Vue.use(Table)
 Vue.use(TableColumn)
+Vue.use(Switch)
+Vue.use(Tooltip)
+Vue.use(Pagination)
+Vue.use(Dialog)
 // 在Vue的构造函数上加入一个$massage方法
 Vue.prototype.$message = Message

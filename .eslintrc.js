@@ -17,6 +17,9 @@ module.exports = {
     'object-curly-newline': 'off',
     'quotes': 'off',
     'semi': 'off',
-    'space-before-function-paren': [2,{"anonymous": "always", "named": "never", "asyncArrow": "always"}]
+    'space-before-function-paren': 'off',
+    'no-useless-return': 'off',
+    'no-trailing-spaces': ['error', { "skipBlankLines": true }]
+    // [2,{"anonymous": "always", "named": "never", "asyncArrow": "always"}]
   }
 }

@@ -65,9 +65,7 @@ export default {
       // 直接获取loginFormRef对象时，dom元素还未加载，报错
       // this.$refs.loginFormRef.resetFields()
       // nextTick()，是将回调函数延迟在下一次dom更新数据后调用，即：当数据更新了，在dom中渲染后，自动执行该函数
-      this.$nextTick(() => {
-        this.$refs.loginFormRef.resetFields()
-      })
+      this.$refs.loginFormRef.resetFields()
     },
     login () {
       this.$nextTick(() => {
