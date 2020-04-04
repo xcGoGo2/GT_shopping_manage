@@ -137,18 +137,6 @@
       </span>
     </el-dialog>
 
-    <!-- 删除用户警告 -->
-   <!--  <el-dialog title="警告" :visible.sync="DeleteUser" width="50%"> -->
-      <!-- 删除用户对话框 -->
-     <!--  <div>
-        <h1>确定删除用户？</h1>
-      </div> -->
-      <!-- 对话框脚 -->
-      <!-- <span slot="footer" class="dialog-footer">
-        <el-button @click="DeleteUser = false">取 消</el-button>
-        <el-button type="primary" @click="deleteForm">删除</el-button>
-      </span>
-    </el-dialog> -->
     <!-- 权限设置对话框 -->
    <!--  <el-dialog title="权限设置" :visible.sync="PowerVisible" width="50%" ref='PowerRef'>
       <el-form :model="PowerFormData" label-width="100px" ref='editFormRef'>
