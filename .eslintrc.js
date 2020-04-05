@@ -19,7 +19,11 @@ module.exports = {
     'semi': 'off',
     'space-before-function-paren': 'off',
     'no-useless-return': 'off',
-    'no-trailing-spaces': ['error', { "skipBlankLines": true }]
+    'no-trailing-spaces': ['error', { "skipBlankLines": true }],
+    'no-tabs': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'vue/no-unused-vars': 'off',
+    'no-template-curly-in-string': 'off'
     // [2,{"anonymous": "always", "named": "never", "asyncArrow": "always"}]
   }
 }

@@ -4,11 +4,11 @@ import login from '../components/login.vue'
 // 导入Home组件
 import Home from '../components/Home.vue'
 // 导入users组件
-import users from '../components/menu/users.vue'
+import users from '../components/Users/users.vue'
 // 导入roles组件
-import roles from '../components/menu/roles.vue'
+import roles from '../components/Rigths/roles.vue'
 // 导入rights组件
-import rights from '../components/menu/rights.vue'
+import rights from '../components/Rigths/rights.vue'
 import orders from '../components/menu/orders.vue'
 import params from '../components/menu/params.vue'
 import goods from '../components/menu/goods.vue'
