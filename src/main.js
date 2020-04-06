@@ -14,6 +14,9 @@ import './plugins/element.js'
 // 导入全局样式
 import './assets/css/global.css'
 
+// 导入table-tree插件
+import TableTree from 'vue-table-with-tree-grid'
+
 // 导入axios
 import axios from 'axios'
 // 导入基准地址
@@ -28,6 +31,8 @@ axios.interceptors.request.use(config => {
   return config
 })
 
+// 将table-tree注册为全局可用的组件
+Vue.component('table-tree', TableTree)
 // 在Vue的构造函数上创建$http方法，然后所有的vue实例都可用axios方法
 Vue.prototype.$http = axios
 

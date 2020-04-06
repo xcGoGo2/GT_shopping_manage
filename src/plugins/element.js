@@ -28,7 +28,8 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 // 导入消息提示框
 Vue.use(Button)
@@ -58,6 +59,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 // 在Vue的构造函数上加入一个$massage方法
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

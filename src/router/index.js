@@ -10,10 +10,10 @@ import roles from '../components/Rigths/roles.vue'
 // 导入rights组件
 import rights from '../components/Rigths/rights.vue'
 import orders from '../components/menu/orders.vue'
-import params from '../components/menu/params.vue'
-import goods from '../components/menu/goods.vue'
+import params from '../components/goods_cate/params.vue'
+import goods from '../components/goods_cate/goods.vue'
 import reports from '../components/menu/reports.vue'
-import categories from '../components/menu/categories.vue'
+import categories from '../components/goods_cate/categories.vue'
 import hello from '../components/hello.vue'
 Vue.use(VueRouter)
 
