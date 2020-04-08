@@ -11,7 +11,9 @@
       <!-- 添加角色按钮 -->
       <el-row>
         <el-col>
-          <el-button type="success" @click="AddVisible = true">添加角色</el-button>
+          <el-button type="success" @click="AddVisible = true"
+            >添加角色</el-button
+          >
         </el-col>
       </el-row>
 
@@ -21,13 +23,13 @@
           <slot slot-scope="scope">
             <el-row v-for="item0 in scope.row.children" :key="item0.id">
               <el-col :span="6" class="col1">
-                <el-tag type="danger">{{item0.authName}}</el-tag>
+                <el-tag type="danger">{{ item0.authName }}</el-tag>
                 <i class="el-icon-caret-right"></i>
               </el-col>
               <el-col :span="18" class="col2">
-                <el-row v-for="(item1) in item0.children" :key="item1.id">
+                <el-row v-for="item1 in item0.children" :key="item1.id">
                   <el-col :span="7">
-                    <el-tag type="success">{{item1.authName}}</el-tag>
+                    <el-tag type="success">{{ item1.authName }}</el-tag>
                     <i class="el-icon-caret-right"></i>
                   </el-col>
                   <el-col :span="17">
@@ -35,7 +37,8 @@
                       v-for="item2 in item1.children"
                       :key="item2.id"
                       type="warning"
-                    >{{item2.authName}}</el-tag>
+                      >{{ item2.authName }}</el-tag
+                    >
                   </el-col>
                 </el-row>
               </el-col>
@@ -52,27 +55,40 @@
               icon="el-icon-edit"
               size="mini"
               @click="EditForm(scope.row.id)"
-            >编辑</el-button>
+              >编辑</el-button
+            >
             <el-button
               type="danger"
               icon="el-icon-delete"
               size="mini"
               @click="DeleteEditForm(scope.row.id)"
-            >删除</el-button>
+              >删除</el-button
+            >
             <el-button
               type="warning"
               icon="el-icon-setting"
               size="mini"
               @click="SelectPower(scope.row)"
-            >分配权限</el-button>
+              >分配权限</el-button
+            >
           </slot>
         </el-table-column>
       </el-table>
     </el-card>
 
     <!-- 对话框——添加用户 -->
-    <el-dialog title="添加用户" :visible.sync="AddVisible" width="50%"  @close="resetForm('AddFormRef')">
-      <el-form :model="AddFrom" ref="AddFormRef" label-width="100px" :rules="FormRules">
+    <el-dialog
+      title="添加用户"
+      :visible.sync="AddVisible"
+      width="50%"
+      @close="resetForm('AddFormRef')"
+    >
+      <el-form
+        :model="AddFrom"
+        ref="AddFormRef"
+        label-width="100px"
+        :rules="FormRules"
+      >
         <el-form-item label="角色名称" prop="roleName">
           <el-input v-model="AddFrom.roleName"></el-input>
         </el-form-item>
@@ -88,7 +104,12 @@
 
     <!-- 对话框，编辑用户信息 -->
     <el-dialog title="编辑" :visible.sync="EditVisible" width="50%">
-      <el-form :model="EditFormData" ref="EditFormRef" label-width="100px" :rules="FormRules">
+      <el-form
+        :model="EditFormData"
+        ref="EditFormRef"
+        label-width="100px"
+        :rules="FormRules"
+      >
         <el-form-item label="角色名称" prop="roleName">
           <el-input v-model="EditFormData.roleName"></el-input>
         </el-form-item>
@@ -103,7 +124,12 @@
     </el-dialog>
 
     <!-- 分配权限对话框 -->
-    <el-dialog title="分配权限" :visible.sync="PowerVisible" width="50%" @close='closedPower' >
+    <el-dialog
+      title="分配权限"
+      :visible.sync="PowerVisible"
+      width="50%"
+      @close="closedPower"
+    >
       <el-tree
         ref="PowerRef"
         :data="RightsData"
@@ -155,8 +181,8 @@ export default {
       },
       // tree中默认选择的数组
       defKey: [],
-      roleid: ''
-    }
+      roleid: ""
+    };
   },
   // 钩子函数（在刷新界面之前执行）
   created() {
@@ -218,7 +244,7 @@ export default {
       })
         .then(async () => {
           const { data: res } = await this.$http.delete("roles/" + id);
-          console.log(res);
+          //   console.log(res);
           if (res.meta.status !== 200) return this.$message.error("删除失败");
           this.$message.success(res.meta.msg);
           this.getRolesList();
@@ -228,7 +254,7 @@ export default {
         });
     },
     async SelectPower(role) {
-      this.roleid = role.id
+      this.roleid = role.id;
       const { data: res } = await this.$http.get("rights/tree");
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg);
       this.RightsData = res.data;
@@ -239,8 +265,8 @@ export default {
     },
     // 关闭对话框，清除数据功能
     resetForm(AddFormRef) {
-      this.$refs[AddFormRef].resetFields()
-      this.AddFrom.roleDesc = ''
+      this.$refs[AddFormRef].resetFields();
+      this.AddFrom.roleDesc = "";
     },
     // 通过递归的形式，获取角色的所有三级子节点，并保存在defKey数组中
     getLeafIds(node, arr) {
@@ -250,28 +276,31 @@ export default {
       }
 
       node.children.forEach(item => {
-        this.getLeafIds(item, arr)
-      })
+        this.getLeafIds(item, arr);
+      });
     },
     closedPower() {
-      this.defKey = []
+      this.defKey = [];
     },
     async allotRights() {
       const keys = [
         ...this.$refs.PowerRef.getCheckedKeys(),
         ...this.$refs.PowerRef.getHalfCheckedKeys()
-      ]
-      const idStr = keys.join(',')
-      const { data: res } = await this.$http.post('roles/' + this.roleid + '/rights', { rids: idStr })
-      if (res.meta.status !== 200) return this.$message.error('请求失败')
-      this.getRolesList()
-      this.PowerVisible = false
+      ];
+      const idStr = keys.join(",");
+      const { data: res } = await this.$http.post(
+        "roles/" + this.roleid + "/rights",
+        { rids: idStr }
+      );
+      if (res.meta.status !== 200) return this.$message.error("请求失败");
+      this.getRolesList();
+      this.PowerVisible = false;
     }
   }
-}
+};
 </script>
 
-<style lang='less' scoped>
+<style lang="less" scoped>
 .el-tag {
   margin: 10px;
 }

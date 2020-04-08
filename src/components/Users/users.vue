@@ -15,7 +15,11 @@
           <div class="grid-content bg-purple">
             <!-- 搜索框 -->
             <el-input placeholder="请输入用户名" v-model="Querrylist.query">
-              <el-button slot="append" icon="el-icon-search" @click="getlist"></el-button>
+              <el-button
+                slot="append"
+                icon="el-icon-search"
+                @click="getlist"
+              ></el-button>
             </el-input>
           </div>
         </el-col>
@@ -42,7 +46,7 @@
             <el-switch
               active-color="#13ce66"
               v-model="scope.row.mg_state"
-              @change='userstatechange(scope.row.mg_state, scope.row.id)'
+              @change="userstatechange(scope.row.mg_state, scope.row.id)"
             ></el-switch>
           </template>
         </el-table-column>
@@ -87,9 +91,19 @@
     </el-card>
 
     <!-- 添加用户对话框 -->
-    <el-dialog title="添加用户" :visible.sync="dialogVisible" width="50%" @close="remove">
+    <el-dialog
+      title="添加用户"
+      :visible.sync="dialogVisible"
+      width="50%"
+      @close="remove"
+    >
       <!-- 这是添加用户对话框主体区 -->
-      <el-form :model="addFormData" :rules="FormRules" label-width="100px" ref="addFormRef">
+      <el-form
+        :model="addFormData"
+        :rules="FormRules"
+        label-width="100px"
+        ref="addFormRef"
+      >
         <el-form-item label="用户名" prop="username">
           <el-input v-model="addFormData.username"></el-input>
         </el-form-item>
@@ -111,9 +125,19 @@
     </el-dialog>
 
     <!-- 修改用户对话框 -->
-    <el-dialog title="修改用户消息" :visible.sync="EditVisible" width="50%" ref="editRef">
+    <el-dialog
+      title="修改用户消息"
+      :visible.sync="EditVisible"
+      width="50%"
+      ref="editRef"
+    >
       <!-- 这是修改用户对话框主体区 -->
-      <el-form :model="editFormData" :rules="FormRules" label-width="100px" ref="editFormRef">
+      <el-form
+        :model="editFormData"
+        :rules="FormRules"
+        label-width="100px"
+        ref="editFormRef"
+      >
         <el-form-item label="用户名" prop="username">
           <el-input v-model="editFormData.username"></el-input>
         </el-form-item>
@@ -132,9 +156,14 @@
     </el-dialog>
 
     <!-- 权限设置对话框 -->
-    <el-dialog title="分配角色" :visible.sync="PowerVisible" width="50%" ref="PowerRef">
-      <h4>当前用户：{{Power_username}}</h4>
-      <h4>当前角色：{{Power_role_name}}</h4>
+    <el-dialog
+      title="分配角色"
+      :visible.sync="PowerVisible"
+      width="50%"
+      ref="PowerRef"
+    >
+      <h4>当前用户：{{ Power_username }}</h4>
+      <h4>当前角色：{{ Power_role_name }}</h4>
       <el-select v-model="RolesDataList" placeholder="请选择">
         <el-option
           v-for="item in RolesData"
@@ -208,9 +237,9 @@ export default {
       PowerVisible: false,
       Power_username: "",
       Power_role_name: "",
-      Power_id: '',
-      RolesData: '',
-      RolesDataList: '',
+      Power_id: "",
+      RolesData: "",
+      RolesDataList: "",
       // 修改用户信息对象存储
       editFormData: {},
 
@@ -279,10 +308,12 @@ export default {
 
     // 改变状态
     async userstatechange(value, id) {
-      const { data: res } = await this.$http.put('users/' + id + '/state/' + value)
-      if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
-      this.$message.success("状态改变")
-      this.getlist()
+      const { data: res } = await this.$http.put(
+        "users/" + id + "/state/" + value
+      );
+      if (res.meta.status !== 200) return this.$message.error(res.meta.msg);
+      this.$message.success("状态改变");
+      this.getlist();
     },
 
     // 添加用户操作1.0——打开对话框
@@ -348,7 +379,9 @@ export default {
       })
         .then(async () => {
           const { data: res } = await this.$http.delete("users/" + id);
-          if (res.meta.status !== 200) return this.$message.success(res.meta.msg);
+          if (res.meta.status !== 200) {
+            return this.$message.success(res.meta.msg);
+          }
           this.$message.error(res.meta.msg);
           this.getlist();
         })
@@ -361,24 +394,27 @@ export default {
     },
     // 分配权限
     async PowerChange(role) {
-      this.Power_id = role.id
+      this.Power_id = role.id;
       this.Power_username = role.username;
       this.Power_role_name = role.role_name;
-      const { data: res } = await this.$http.get('roles')
+      const { data: res } = await this.$http.get("roles");
       if (res.meta.status !== 200) {
-        return this.$message.error(res.meta.msg)
+        return this.$message.error(res.meta.msg);
       }
-      this.RolesData = res.data
+      this.RolesData = res.data;
       this.PowerVisible = true;
     },
     async PowerSelect() {
-      console.log(this.RolesDataList)
-      const { data: res } = await this.$http.put('users/' + this.Power_id + '/role', { rid: this.RolesDataList })
-      if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
-      this.$message.success(res.meta.msg)
+      //   console.log(this.RolesDataList)
+      const { data: res } = await this.$http.put(
+        "users/" + this.Power_id + "/role",
+        { rid: this.RolesDataList }
+      );
+      if (res.meta.status !== 200) return this.$message.error(res.meta.msg);
+      this.$message.success(res.meta.msg);
 
-      this.getlist()
-      this.PowerVisible = false
+      this.getlist();
+      this.PowerVisible = false;
     }
   }
 };

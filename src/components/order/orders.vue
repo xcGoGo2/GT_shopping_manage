@@ -174,7 +174,7 @@ export default {
     },
     searchOrderList() {
       this.getOrderList();
-      console.log(this.queryInfo)
+    //   console.log(this.queryInfo)
     },
     handleSizeChange(newSize) {
       this.queryInfo.pagesize = newSize;
@@ -201,7 +201,7 @@ export default {
       this.progressInfo = res.data;
 
       this.progressVisible = true;
-      console.log(this.progressInfo);
+    //   console.log(this.progressInfo);
     }
   }
 };
