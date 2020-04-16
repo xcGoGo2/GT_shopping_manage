@@ -27,7 +27,7 @@ import 'quill/dist/quill.bubble.css'
 // 导入axios
 import axios from "axios";
 // 导入基准地址
-axios.defaults.baseURL = "http://127.0.0.1:8888/api/private/v1/";
+axios.defaults.baseURL = "http://39.107.243.118:8888/api/private/v1/";
 
 // axios请求拦截器（在向服务器发送请求之前调用，判断是否有权限）
 axios.interceptors.request.use(config => {

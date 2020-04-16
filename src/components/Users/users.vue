@@ -359,8 +359,8 @@ export default {
         // 当请求失败
         if (res.meta.status !== 200) return this.$message.error(res.meta.msg);
         // 当请求成功
-        this.getlist();
         this.$message.success(res.meta.msg);
+        this.getlist();
         this.EditVisible = false;
       });
     },
