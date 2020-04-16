@@ -39,8 +39,8 @@ export default {
     return {
       // 从表单中双向绑定的数据，都作为对象的属性存储在form对象中
       form: {
-        username: 'admin',
-        password: '123456'
+        username: '',
+        password: ''
       },
       // 表单验证对象
       FormRules: {
