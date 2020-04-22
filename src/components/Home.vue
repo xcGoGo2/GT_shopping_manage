@@ -6,8 +6,9 @@
     <!-- 界面头部 -->
     <el-header>
       <span class="home_logo">
-        <img src="../assets/home_logo.jpg" alt="">
-        <span>冠特员工管理系统</span>
+        <img src="../assets/welcome to.png" alt="">
+        <img src="../assets/home_logo.jpg" class="logo" alt="">
+        <span>冠特电商管理系统</span>
       </span>
       <el-button type="info" @click="logout">注销</el-button>
     </el-header>
@@ -18,7 +19,7 @@
         <!-- 实现折叠与收缩功能 -->
         <div class="toggle-button" @click="change">|||</div>
         <!-- 依次设置背景颜色，是否只展示一个菜单，文字颜色，点击颜色 -->
-        <el-menu :collapse='iscollapse' :router='true' unique-opened collapse-transition background-color='#005737' text-color='#fff' active-text-color='#1b54f2'>
+        <el-menu :collapse='iscollapse' :router='true' unique-opened collapse-transition background-color='#304156' text-color='#fff' active-text-color='#1b54f2'>
           <!-- 设置router后，以index作为跳转的路由 -->
           <el-submenu :index = "item.id + ''" v-for = 'item in list' :key = "item.id">
             <template slot="title">
@@ -89,7 +90,7 @@ export default {
 }
 // elementUI中，标签名默认为为类名
 .el-header {
-  background-color: #2ADD9C;
+  background-color: #304156;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,9 +100,10 @@ export default {
     font-size: 30px;
     display: flex;
     align-items: center;
-    margin-left: 202.5px;
-    img {
+    // margin-left: 202.5px;
+    .logo {
       border-radius: 50%;
+      margin-left: 20px;
     }
     span {
       margin-left: 20px
@@ -110,11 +112,11 @@ export default {
 }
 
 .el-aside {
-  background-color: #005737;
+  background-color: #304156;
 }
 
 .el-main {
-  background-color: #3498db;
+  background-color: #FFFFFF;
 }
 
 .el-menu {
@@ -122,7 +124,7 @@ export default {
 }
 
 .toggle-button {
-  background-color: #005737;
+  background-color: #304156;
   font-size: 20px;
   color: #fff;
   text-align: center;
