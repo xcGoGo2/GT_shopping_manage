@@ -100,20 +100,20 @@ export default {
 }
 
 .login_box {
-  height: 300px;
-  width: 450px;
+  height: 18.75rem;
+  width: 28.125rem;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   position: absolute;
 }
 
 .log_box {
-  height: 130px;
-  width: 130px;
-  border: 1px solid #eee;
+  height: 8.125rem;
+  width: 8.125rem;
+  border: 0.0625rem solid #eee;
   border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 0 10px #ddd;
+  padding: 0.625rem;
+  box-shadow: 0 0 0.625rem #ddd;
   //移动log
   position: absolute;
   left: 50%;
@@ -121,7 +121,7 @@ export default {
   img {
     height: 100%;
     widows: 100%;
-    border: 1px solid #eee;
+    border: 0.0625rem solid #eee;
     border-radius: 50%;
     background-color: #eee;
   }
@@ -132,7 +132,7 @@ export default {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   // 让盒子居于登录框中
   box-sizing: border-box;
 }
@@ -140,6 +140,6 @@ export default {
 .btns {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 </style>
