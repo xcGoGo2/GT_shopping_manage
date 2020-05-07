@@ -23,7 +23,8 @@ module.exports = {
     'no-tabs': 'off',
     'no-mixed-spaces-and-tabs': 'off',
     'vue/no-unused-vars': 'off',
-    'no-template-curly-in-string': 'off'
+    'no-template-curly-in-string': 'off',
+    'prefer-const': 'off'
     // [2,{"anonymous": "always", "named": "never", "asyncArrow": "always"}]
   }
 }

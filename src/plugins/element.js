@@ -36,8 +36,9 @@ import {
   Step,
   CheckboxGroup,
   Checkbox,
-  Upload
-} from 'element-ui'
+  Upload,
+  Notification
+} from "element-ui";
 
 import Timeline from './timeline/index.js'
 import TimelineItem from './timeline-item/index.js'
@@ -82,3 +83,4 @@ Vue.use(TimelineItem)
 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
+Vue.prototype.$notify = Notification

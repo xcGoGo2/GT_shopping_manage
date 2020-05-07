@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // import login from '../components/login.vue'
-const login = () => import(/* webpackChunkName: "login_Home_hello" */ '../components/login.vue')
+const login = () => import(/* webpackChunkName: "login_Home_hello" */ '../pages/login')
 // 导入Home组件
 // import Home from '../components/Home.vue'
 const Home = () => import(/* webpackChunkName: "login_Home_hello" */ '../components/Home.vue')
