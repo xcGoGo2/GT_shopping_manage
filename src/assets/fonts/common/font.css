@@ -1,0 +1,18 @@
+
+@font-face {  
+  /* 命名字体 */
+  font-family: 'DIN';
+  /* //引入字体 */
+  src: url('DIN.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {  
+  /* 命名字体 */
+  font-family: 'PING';
+  /* //引入字体 */
+  src: url('苹方字体.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}

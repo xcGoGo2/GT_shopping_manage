@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>苹方字体下载-第一字体网</title>
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!--[if IE 6]>    
+        <link href="/res/css/ie6.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lt IE 10]>
+        <script type="text/javascript" src="/res/js/PIE.js"></script>
+    <![endif]-->
+
+    <meta name="keywords" content="苹方字体下载,苹方字体" />
+    <meta name="description" content="第一字体网提供PS常用的免费苹方字体下载。" />
+    <link href="/res/css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="/Res/js/jquery.js"></script>
+    <script src="/res/js/respond.min.js"></script>
+</head>
+<body class="mainblock">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="http://www.diyiziti.com/" title="字体转换器在线转换">&nbsp;</a>
+                    <div>
+
+    <ul class="nav">
+        <li class="slogan">
+            <a href="/">艺术字转换器</a><span>·</span><a href="http://www.diyiziti.com/">艺术字体在线生成器</a></li>
+        <li class="library">
+            <i class="icon-library"></i><a href="/List">字体库</a>
+        </li>
+        <li><a href="http://font.diyiziti.com/" target="_blank"><i class="icon-forum"></i>论坛</a></li>
+	<li class="dropdown">
+            <a href="http://m.diyiziti.com/" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-mobile"></i>手机版</a>
+            <div class="dropdown-menu erweima-nav" role="menu">
+              <dl>
+                  <dt class="icon-erweima-wx"><span>微信在线转换</span></dt>
+                  <dt class="icon-erweima-wap"><span>手机浏览器版</span></dt>		
+              </dl>				
+            </div>		
+        </li>		
+    </ul>
+
+                        <form action="/List" class="navbar-search pull-right" method="get">                            <input type="text" name="keyword" value="" class="search-query"  />
+                            <button type="submit" class="btn" id="btnSearch" style="margin-top: -3px">搜索</button>
+</form>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="container">
+    <ul id="tabnav" class="nav nav-pills">
+        <li><a href="/">首页</a></li>
+        <li><a href="/shufa">在线书法字体生成</a></li>
+        <li><a href="/yishuzi">艺术字转换器</a></li>
+        <li><a href="/zhuanshu">篆体字转换器</a></li>
+        <li><a href="/maobizi">毛笔字在线生成器</a></li>
+        <li><a href="/xingshu">行书字体转换器</a></li>
+        <li><a href="/lishu">隶书在线转换</a></li>
+        <li><a href="/caoshu">草书字体转换器</a></li>
+        <li><a href="/xingkai">行楷字体转换</a></li>
+        <li><a href="/qianming">个性签名在线生成器</a></li>
+        <li><a href="/guanggao">广告字体转换器</a></li>		
+        <li><a href="/pop">POP字体转换器</a></li>
+        <li><a href="/huatizi">花体字转换器</a></li>
+        <li><a href="/shouxie">手写体在线转换</a></li>
+        <li><a href="/meishu">美术字体转换</a></li>
+        <li><a href="/haibao">海报字体转换器</a></li>
+        <li><a href="/english">英文艺术字体转换</a></li>
+        <li class="last-tab dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="/katong">卡通字体转换器</a></li>
+                <li><a href="/keai">可爱字体转换器</a></li>
+                <li><a href="/gangbizi">钢笔字转换器</a></li>
+                <li><a href="/yinzhang">在线印章生成器</a></li>
+                <li><a href="/kongxin">空心字体转换器</a></li>
+                <li><a href="/songti">宋体字体转换器</a></li>
+                <li><a href="/heiti">黑体字体转换器</a></li>
+                <li><a href="/yuanti">圆体字转换器</a></li>
+                <li><a href="/kaishu">楷书字体转换器</a></li>
+                <li><a href="/jinwen">金文在线转换</a></li>
+                <li><a href="/feizhuliu">非主流字体转换器</a></li>
+                <li><a href="/logo">logo设计字体转换器</a></li>
+                <li><a href="/teshu">特殊字体在线转换</a></li>
+                <li><a href="/huatiyingwen">花体英文字</a></li>
+                <li><a href="/shuzi">数字字体</a></li>
+                <li><a href="/hanwen">韩文转换器</a></li>
+                <li><a href="/riwen">日文转换器</a></li>				
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <section>
+        <div class="well" style="text-align: left">
+            <h3>苹方字体下载</h3>
+            <br />
+            <form id="font-form" method="POST" class="form-horizontal">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th class="form-label" style="vertical-align: top;">
+                                <label></label>
+                            </th>
+                            <td colspan="5">
+                                <div class="imgResult">
+                                        <img id="imgResult" alt="苹方字体下载" width="570" height="120" src="http://www.diyiziti.com/Res/Images/Thumb/苹方字体/default.PNG" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ga">
+                            <td></td>
+                            <td colspan="5">
+                                <br />
+                                <input type="hidden" name="id" value="401" />
+                                <button class="btn btn-large" type="submit" data-id="401"><i class="icon-download"></i> 下载地址</button> <a target="_blank" href="/Builder/401" class="btn btn-large btn-large2"><i class="icon-picture"></i>苹方字体转换器</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="5">
+				<a id="588ku2" class="friend-5" href="https://588ku.com/yishuzi/0-pxnum-0-0-0-0-0-1/?hd=234" target="_blank" rel="external nofollow">&nbsp;</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="5">
+				<script type="text/javascript" src="//facai1.diyiziti.com/source/up_m/resource/rqhq_x/h.js"></script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="5">
+                                <span class="prettyprint">
+                                    <b>苹方字体下载和安装使用说明：</b><br />
+                                    1、 第一字体网提供的苹方字体下载之后均为通用的TTF字体文件格式，仅供学习之用，由于字库的设计需要付出大量的心血，若您需要将其用作商业用途，我们强烈建议您向原作者联系购买。<br />
+                                    2、 在不同操作系统上使用和安装苹方字体的方法：
+                                    <li>Windows系统的通用方法：打开“控制面板”，找到“外观”-“字体”，然后把下载的TTF文件复制粘贴到这里即可，然后重新打开Word或PS就可以看到了。</li>
+                                    <li>Win7/ Win8系统: 鼠标右键单击已下载的苹方字体文件，在弹出菜单中选择 "Install" 即可完成。</li>
+                                    <li>Windows XP系统: 除了上面的通用方法，您也可以把文件复制到文件夹“C:\Windows\Fonts”里面即可自动安装。</li>
+                                    <li>WMac系统：这个最简单，双击字体文件打开字体册，然后点击“安装字体”按钮就即可。</li>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr id="share">
+                            <td></td>
+                            <td colspan="5">
+                                <div class="bdsharebuttonbox">
+											<a class="bds_qzone" data-cmd="qzone"></a>
+                                            <a class="bds_tsina" data-cmd="tsina"></a>                                            
+                                            <a class="bds_weixin" data-cmd="weixin"></a>
+                                            <a class="bds_sqq" data-cmd="sqq"></a>
+											<a class="bds_tieba" data-cmd="tieba"></a>                                            
+                                            <a class="bds_huaban" data-cmd="huaban"></a>                                            
+                                </div>
+                            </td>
+                        </tr>						
+                </table>
+            </form>
+        </div>
+    </section>
+</div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="well align-center">
+                    <div class="copyright"><p>©2020 软件版本号：<a href="http://www.diyiziti.com/">字体转换器</a>正式版 v3.0 &nbsp; <a href="http://www.beian.miit.gov.cn/">粤ICP备13058034号</a>&nbsp; &nbsp;合作与字体购买请<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=PFhVRVVGVUhVfFpTRFFdVVASX1NR" target="_blank" rel="external nofollow">发邮件</a>或发微信→</p>
+<p>第一字体网提供的<a href="http://www.diyiziti.com/">字体转换器在线转换</a>和生成工具仅为字体预览和学习之用，如需用于商业用途请购买版权授权。书法艺术字体交流Q群:323685722</p></div>
+<div class="erweima">
+	<i class="icon-fuwuhao"></i><p>官网微信服务号</p>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () { if ($.browser.msie && parseInt($.browser.version, 10) === 6) { $('.row div[class^="span"]:last-child').addClass("last-child"); $('[class*="span"]').addClass("margin-left-20"); $(':button[class="btn"], :reset[class="btn"], :submit[class="btn"], input[type="button"]').addClass("button-reset"); $(":checkbox").addClass("input-checkbox"); $('[class^="icon-"], [class*=" icon-"]').addClass("icon-sprite"); $(".pagination li:first-child a").addClass("pagination-first-child") } })
+    </script>
+    <script type="text/javascript" src="/Res/js/all.js"></script>
+    <script type="text/javascript" src="/Res/js/common.js"></script>
+    
+    <script type="text/javascript">
+        window._bd_share_config = {
+            common: {
+                bdSnsKey: { 'tsina': '3825551432' }
+            },
+            share: [
+                {
+                    "bdSize": 24
+                }
+            ]
+        };
+        with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            if (window.PIE) {
+                $('div').each(function () {
+                    PIE.attach(this);
+                });
+            }
+
+            $('input[placeholder]').each(function () {
+                var input = $(this);
+                $(input).val(input.attr('placeholder'));
+
+                $(input).focus(function () {
+                    if (input.val() == input.attr('placeholder')) {
+                        input.val('');
+                    }
+                });
+
+                $(input).blur(function () {
+                    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                        input.val(input.attr('placeholder'));
+                    }
+                });
+            });
+        });
+        //以下为百度统计
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1a6016c8e736ecef523fbe2539419b5a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</body>
+</html>

@@ -14,6 +14,9 @@ import "./plugins/element.js";
 // 导入全局样式
 import "./assets/css/global.css";
 
+// 导入引用字体文件
+import "./assets/fonts/common/fontcss";
+
 // 导入table-tree插件
 import TableTree from "vue-table-with-tree-grid";
 

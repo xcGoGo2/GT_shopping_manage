@@ -141,25 +141,6 @@ export default {
     loginReset(form) {
       this.$refs[form].resetFields();
     },
-    // _login() {
-    // 	this.$store
-    // 		.dispatch('user/_login', this.ruleForm)
-    // 		.then((res) => {
-    // 			if (!res.data.success) {
-    // 				this.refresh()
-    // 			} else {
-    // 				this.$router.push(this.$route.query.redirect)
-    // 				if (this.notifyObj) {
-    // 					this.notifyObj.close()
-    // 				}
-    // 				this.notifyObj = null
-    // 			}
-    // 		})
-    // 		.catch((error) => {
-    // 			this.refresh()
-    // 			this.$message.error(error)
-    // 		})
-    // },
     async _login() {
       // axios 请求部分
       // 1.0 获取返回的参数（await必须在async中使用）
@@ -203,7 +184,7 @@ export default {
   height: 100%;
   width: 100%;
   // 背景图片
-  background: url("../../assets/img/pageBg/loginBg3.jpg") no-repeat center center;
+  background: url("../../assets/img/pageBg/loginBg.jpg") no-repeat center center;
   background-size: 100% 100%;
   overflow: hidden;
 }
@@ -219,7 +200,8 @@ export default {
 
 .loginH2 {
   font-size: 38px;
-  color: #fff;
+  font-family: DIN;
+  color: #4bb5c1;
   text-align: center;
 }
 
