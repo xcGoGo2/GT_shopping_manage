@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/GT-furniture.jpg" alt="" />
+    <img src="../../assets/GT-furniture.jpg" alt="" />
   </div>
 </template>
 

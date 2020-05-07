@@ -6,8 +6,8 @@
     <!-- 界面头部 -->
     <el-header>
       <span class="home_logo">
-        <img src="../assets/welcome to.png" alt="">
-        <img src="../assets/home_logo.jpg" class="logo" alt="">
+        <img src="../../assets/welcome to.png" alt="">
+        <img src="../../assets/home_logo.jpg" class="logo" alt="">
         <span>冠特电商管理系统</span>
       </span>
       <el-button type="info" @click="logout">注销</el-button>
